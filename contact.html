@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Rithish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">Rithish<span>.</span></a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="achievements.html">Achievements</a>
+                <a class="active" href="contact.html">Contact</a>
+            </nav>
+
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner container">
+            <p class="section-label">LET'S CONNECT</p>
+            <h1>Contact <span>Me</span></h1>
+            <p>Have a question or want to discuss a project? You can reach me using the details below.</p>
+        </section>
+
+        <section class="section container">
+            <div class="contact-box">
+                <h2>Get in Touch</h2>
+
+                <p>
+                    I'm interested in learning, collaborating on projects,
+                    and connecting with people who enjoy technology.
+                </p>
+
+                <ul class="info-list">
+                    <li>
+                        <strong>Email:</strong>
+                        Add Rithish's email address here
+                    </li>
+
+                    <li>
+                        <strong>GitHub:</strong>
+                        <a href="https://github.com/rithishrit778-bot"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Visit GitHub Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <strong>LinkedIn:</strong>
+                        Add the actual LinkedIn profile link here, if available
+                    </li>
+                </ul>
+
+                <div class="buttons">
+                    <a class="btn btn-primary"
+                       href="https://github.com/rithishrit778-bot"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Visit My GitHub
+                    </a>
+
+                    <a class="btn btn-secondary" href="index.html">
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© <span id="year"></span> Rithish. Built with care.</div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("open");
+        }
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
