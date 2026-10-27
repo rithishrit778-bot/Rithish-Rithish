@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Rithish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">Rithish<span>.</span></a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="active" href="projects.html">Projects</a>
+                <a href="achievements.html">Achievements</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner container">
+            <p class="section-label">MY WORK</p>
+            <h1>My <span>Projects</span></h1>
+            <p>A collection of projects, experiments, and things I build while learning.</p>
+        </section>
+
+        <section class="section container">
+            <div class="grid three-columns">
+
+                <article class="card">
+                    <div class="card-icon">🌐</div>
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A personal website to introduce myself, display my
+                        projects, and share my achievements.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <p class="intro">Replace this example with the actual project details.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>Project Two</h3>
+                    <p>
+                        Add the name of another project, what it does,
+                        and the problem it helps solve.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Add technology</span>
+                    </div>
+                    <p class="intro">Add a project link when available.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Project Three</h3>
+                    <p>
+                        Describe another project, what you learned,
+                        and the tools you used to build it.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Add technology</span>
+                    </div>
+                    <p class="intro">Add a project link when available.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="card">
+                <h2>More projects coming soon!</h2>
+                <p>
+                    This page will grow as I learn new skills and build
+                    more projects.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© <span id="year"></span> Rithish. Built with care.</div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("open");
+        }
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
