@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Rithish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">Rithish<span>.</span></a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a class="active" href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="achievements.html">Achievements</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner container">
+            <p class="section-label">GET TO KNOW ME</p>
+            <h1>About <span>Me</span></h1>
+            <p>A little about my interests, learning journey, and goals.</p>
+        </section>
+
+        <section class="section container">
+            <div class="two-column">
+                <article class="card">
+                    <h2>Who Am I?</h2>
+                    <p>
+                        Hello! I'm Rithish. I'm interested in technology,
+                        programming, and creating useful digital solutions.
+                        I enjoy learning new things and improving my skills
+                        through practice.
+                    </p>
+                    <p>
+                        My goal is to become a skilled developer and work
+                        on projects that solve real problems.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2>My Interests</h2>
+                    <ul class="info-list">
+                        <li>Web development</li>
+                        <li>Programming and problem-solving</li>
+                        <li>Learning new technologies</li>
+                        <li>Building creative projects</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="section-heading">
+                <p class="section-label">MY JOURNEY</p>
+                <h2 class="section-title">Learning and Growth</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Learning the Basics</h3>
+                    <p>Building a foundation in programming and computer concepts.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Developing Skills</h3>
+                    <p>Practicing technical skills and exploring web development.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Building Projects</h3>
+                    <p>Applying what I learn to create and improve projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="section-heading">
+                <p class="section-label">WHAT I'M LEARNING</p>
+                <h2 class="section-title">My Skills</h2>
+            </div>
+
+            <div class="card">
+                <p>Add the skills Rithish actually knows or is currently learning.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Programming</span>
+                    <span class="tag">Problem-Solving</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© <span id="year"></span> Rithish. Built with care.</div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("open");
+        }
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
