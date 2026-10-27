@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements | Rithish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">Rithish<span>.</span></a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a class="active" href="achievements.html">Achievements</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner container">
+            <p class="section-label">MY PROGRESS</p>
+            <h1>My <span>Achievements</span></h1>
+            <p>Certificates, milestones, and accomplishments from my learning journey.</p>
+        </section>
+
+        <section class="section container">
+            <div class="grid three-columns">
+
+                <article class="card">
+                    <div class="card-icon">🏆</div>
+                    <h3>Achievement One</h3>
+                    <p>
+                        Add the name of a real achievement, competition,
+                        or award received.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Add year</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">📜</div>
+                    <h3>Certificate One</h3>
+                    <p>
+                        Add the actual certificate name and the organization
+                        that issued it.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Add year</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Learning Milestone</h3>
+                    <p>
+                        Describe a real skill learned, course completed,
+                        or personal milestone.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Learning</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="card" style="margin-top: 25px;">
+                <h2>Every step counts</h2>
+                <p>
+                    I believe that learning consistently and practicing
+                    regularly are important parts of personal growth.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© <span id="year"></span> Rithish. Built with care.</div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("open");
+        }
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
